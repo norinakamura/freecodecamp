@@ -1,0 +1,60 @@
+<!-- 04/11/2017 by Nori Nakamura-->
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<style>
+
+	.green-text {
+	  color: green;
+	}
+	<!-- h2 element degrade to font Monospace when Lobster is not available.-->
+	h2{
+		font-family: Lobster; Monospace;
+	}
+	<!--On line 11 I'm using a font-family propery to set all of my p elements to Monospace.-->
+	p {
+		font-size: 14px;
+		font-family: monospace;
+	}
+
+	.smaller-image {
+	  width: 100px;
+	  }
+<!-- Added borders around element on lines 24 to 27.-->
+	.thick-green-border {
+      border-color: green;
+      border-width: 10px;
+      border-style: solid;
+  } 
+
+</style>
+
+<h2 class="green-text">MyPhotoApp</h2>
+
+<p><a href="#">cat photos</a>View more </p>
+
+<a href="#"><img class="smaller-image thick-green-border"src="https://bit.ly/fcc-relaxing-cat"alt="A kitty cat lying on its back."></a>
+
+<p>Things cats love:</p>
+<ul>
+<li>cat nip</li>
+<li>ball rollings</li>
+<li>vege omelette</li>
+</ul>
+
+<p> Top 3 things cats hate:</p>
+<ol>
+<li>Garfield</li>
+<li>Sylvester</li>
+<li>Cruel kids</li>
+</ol>
+
+<form action="/submit-cat-photo">
+
+<!--Added a Set of radio buttons to the form with option of indoor and outdoor nested in its own label element on lines 55-56.-->
+<label><input type="radio" name="indoor-outdoor"> indoor</label> 
+<label><input type="radio" name="indoor-outdoor"> outdoor</label>
+
+ <input type="text" placeholder="cat photo URL" required>
+ <button type="submit">Submit</button>
+</form>
